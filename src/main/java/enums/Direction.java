@@ -7,4 +7,5 @@ public class Direction {
 	public static final int DOWN = 3;
 	public static final int LEFT = 2;
 	/**prueba */
+	/**prueba 2 */
 }
