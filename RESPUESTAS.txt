@@ -1,0 +1,9 @@
+- Posibles condiciones de carrera: Se puede evidenciar claramente que, es posible que varias serpientes, o hilos, muevan sobre una celda que contiene comida, o ratones. Si esto es asi, los multiples hilos podrian crear varias 
+  instancias de un objeto, cuando solo se espera que sea una. Esto se puede aplicar sobre distintos objetos mas del juego, tales como: jumpPad, rayos, o muros.
+
+- Uso inadecuado de colecciones, considerando su manejo concurrente (para esto, aumente la velocidad del juego y ejecútelo varias veces hasta que se genere un error): Cuando
+  una serpiente con alta velocidad se mueve sobre una celda que contiene turbo y posteriormente el movimiento de la serpiente se devuelve o revierte por aquellas celdas donde
+  su cuerpo esta pasando sobre el tablero.
+
+- Uso innecesario de esperas activas: El ciclo "while" que verifica que una serpiente no este muerta, esto es innecesario ya que esto se puede evitar simplemente deteniendo el
+  cada hilo que se choca con un muro.
