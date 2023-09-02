@@ -399,6 +399,6 @@ public class Snake extends Observable implements Runnable {
         notifyAll();
     }
     //
-    
+   
 
 }
